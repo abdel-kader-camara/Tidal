@@ -1,7 +1,7 @@
-var check = function() {
+function verif() {
     if (document.getElementById('password').value ==
       document.getElementById('cpassword').value) {
-     alert("Mot de passe identiques");
+        window.location.href = "http://google.com";
     } else {
         alert("Mot de passe différents");
     }

@@ -1,10 +1,8 @@
 var check = function() {
     if (document.getElementById('password').value ==
-      document.getElementById('confirm_password').value) {
-      document.getElementById('message').style.color = 'green';
-      document.getElementById('message').innerHTML = 'matching';
+      document.getElementById('cpassword').value) {
+     alert("Mot de passe identiques");
     } else {
-      document.getElementById('message').style.color = 'red';
-      document.getElementById('message').innerHTML = 'not matching';
+        alert("Mot de passe différents");
     }
   }

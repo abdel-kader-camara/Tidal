@@ -3,7 +3,7 @@ MAQUETTE :
 Pages  (5) : 
 - Accueil 
 - Symptomes / Pathologie
-- Inscription
+- Inscription (Formulaire) (pop up)
 - Connexion(pop up)
-- Webographie 
+- Webographie / Page d'information
 

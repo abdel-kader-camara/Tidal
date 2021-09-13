@@ -38,6 +38,7 @@ body {
   margin-right: auto;
 }
 .menu ul {
+  
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -45,6 +46,8 @@ body {
 
 
 .menu li {
+  line-height:20px;
+  display: inline;
   padding: 8px;
   margin-bottom: 7px;
   background-color: rgba(221, 218, 215, 0.658);

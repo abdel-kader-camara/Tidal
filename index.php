@@ -1,23 +1,15 @@
-
 <?php
 
-// Database settings
-$db = "acu";
-$dbhost = "localhost";
-$dbport = 3306;
-$dbuser = "tidal";
-$dbpasswd = "tidal";
+// put full path to Smarty.class.php
+require('/usr/local/lib/php/Smarty/Smarty.class.php');
+$smarty = new Smarty();
 
-try {
+$smarty->setTemplateDir('/var/www/html/Tidal/smarty/templates');
+$smarty->setCompileDir('/var/www/html/Tidal/smarty/templates_c');
+$smarty->setCacheDir('/var/www/html/Tidal/smarty/cache');
+$smarty->setConfigDir('/var/www/html/Tidal/smarty/configs');
 
-    $pdo = new PDO('mysql:host=' . $dbhost . ';port=' . $dbport . ';dbname=' . $db . '', $dbuser, $dbpasswd);
-    $pdo->exec("SET CHARACTER SET utf8");
-    foreach ($dbh->query('SELECT * from patho') as $row) {
-        print_r($row);
-    }
-    $pdo = null;
-} catch (PDOException $e) {
-    print "Erreur !: " . $e->getMessage() . "<br/>";
-    die();
-}
+$smarty->assign('name', 'Ned');
+$smarty->display('index.tpl');
+
 ?>

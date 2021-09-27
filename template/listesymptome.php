@@ -16,7 +16,7 @@ if(mysqli_connect_errno()){
 }
 
 //get results from database
-$result = mysqli_query($connection,"SELECT * FROM symptPatho");
+$result = mysqli_query($connection,"SELECT * FROM symptome");
 $all_property = array();  //declare an array for saving property
 
 //showing property

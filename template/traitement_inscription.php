@@ -11,6 +11,9 @@
     $email = $_POST["email"];
     $mdp = $_POST["mdp"];
     $hash_pwd = password_hash($mdp, PASSWORD_DEFAULT);
+    $hash_pwd1 = password_hash($mdp, PASSWORD_DEFAULT);
+    echo $hash_pwd ; 
+    echo $hash_pwd1 ; 
 
 
     try{

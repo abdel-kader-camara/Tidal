@@ -27,6 +27,7 @@ $sql = "SELECT mdp FROM inscription WHERE nom=:nom";
 $query = $db->prepare($sql);
 $query->execute(array(':nom'=>$login));
 $results = $query->fetch(PDO::FETCH_ASSOC);
+var_dump($results);
 // $MDP_BASE = $results;
 echo "<br>";
 echo "Resultat de la requete SQL : ";

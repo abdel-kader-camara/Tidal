@@ -26,11 +26,11 @@ try{
 $sql = "SELECT mdp FROM inscription WHERE nom=:nom";
 $query = $db->prepare($sql);
 $query->execute(array(':nom'=>$login));
-$results = $query->fetchAll(PDO::FETCH_ASSOC);
-
+$results = $query->fetch(PDO::FETCH_ASSOC);
+// $MDP_BASE = $results;
 echo "<br>";
 echo "Resultat de la requete SQL : ";
-echo $results['mdp'];
+echo $results[0]["mdp"];
 echo "<br>";
 echo "resultat du hash du password dans le FORM : ";
 echo $hash_pwd;

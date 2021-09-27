@@ -1,11 +1,6 @@
 <html>
    <form action="filtre.php" method="post">
-      <select name="filtre">
-         <option value="" selected="selected">All</option>
-         <option value="Abdomen">Abdomen</option>
-         <option value="Agitation">Agitation</option>
-         <option value="Borborygmes">Borborygmes</option>
-      </select>
+        <input type="text" name="filtre">
       <input name="search" type="submit" value="Search"/>
    </form>
    <head>

@@ -36,7 +36,7 @@ echo "<br>";
 echo "resultat du hash du password dans le FORM : ";
 echo $hash_pwd;
 echo "<br>";
-if (password_verify($password,$hash_pwd))  echo "Password OK ! "; 
+if (password_verify($password,$MDP_BASE))  echo "Password OK ! "; 
 else echo "password NOK ! ";
 
 

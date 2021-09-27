@@ -72,7 +72,7 @@
       echo 'ERROR: ' . $e->getMessage();
       } // end try
 
-      echo "filtre sur le mot $flitre";
+      echo "filtre sur le mot $filtre";
    ?>
    </p>
 </body>

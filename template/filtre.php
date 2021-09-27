@@ -1,11 +1,6 @@
 <html>
    <form action="filtre.php" method="post">
-      <select name="filtre">
-         <option value="" selected="selected">All</option>
-         <option value="Abdomen">Abdomen</option>
-         <option value="Agitation">Agitation</option>
-         <option value="Borborygmes">Borborygmes</option>
-      </select>
+        <input type="text" name="filtre">
       <input name="search" type="submit" value="Search"/>
    </form>
    <head>
@@ -42,7 +37,7 @@
          $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
          if(!empty($filtre)) {
-        $query = 'SELECT * FROM symptome WHERE desc = "'.$filtre.'"';
+        $query = 'SELECT * FROM symptome WHERE `desc` LIKE "%'.$filtre.'%"';
          }
          else {
         $query = "SELECT * FROM symptome";

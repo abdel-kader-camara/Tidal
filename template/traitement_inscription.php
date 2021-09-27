@@ -11,6 +11,8 @@
     $email = $_POST["email"];
     $mdp = $_POST["mdp"];
     $hash_pwd = password_hash($mdp, PASSWORD_DEFAULT);
+    $hash_pwd1 = password_hash($mdp, PASSWORD_DEFAULT);
+   
 
 
     try{
@@ -23,7 +25,8 @@
             INSERT INTO inscription(nom, prenom, email, mdp)
             VALUES(:nom, :prenom, :email, :mdp)");
 
-
+        echo $hash_pwd ; 
+        echo $hash_pwd1 ; 
         $sth->bindParam(':nom',$nom);
         $sth->bindParam(':prenom',$prenom);
         $sth->bindParam(':email',$email);

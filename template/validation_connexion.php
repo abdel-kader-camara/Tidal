@@ -32,10 +32,10 @@ echo "<br>";
 echo "Resultat de la requete SQL : ";
 echo $results['mdp'];
 echo "<br>";
-echo "resultat du hash du password dans le FORM";
+echo "resultat du hash du password dans le FORM : ";
 echo $hash_pwd;
 echo "<br>";
-if ($results['mdp'] == $hash_pwd )  echo "Password OK ! "; 
+if (password_verify($password,$hash_pwd))  echo "Password OK ! "; 
 else echo "password NOK ! ";
 
 

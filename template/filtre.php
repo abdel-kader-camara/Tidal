@@ -37,7 +37,7 @@
          $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
          if(!empty($filtre)) {
-        $query = 'SELECT * FROM symptome WHERE `desc` LIKE "'.$filtre.'"';
+        $query = 'SELECT * FROM symptome WHERE `desc` LIKE "%'.$filtre.'%"';
          }
          else {
         $query = "SELECT * FROM symptome";

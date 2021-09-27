@@ -15,21 +15,20 @@ try{
     catch(PODException $e){
         echo "Can't connect to the database";
     }
-$sql = "SELECT * FROM symptome WHERE :patologie"
+$sql = "SELECT desc, nom, FROM patho, meridien WHERE  nom=:meridien"
 //$sql = "SELECT * FROM users WHERE username=:username";
 $query = $db->prepare($sql);
 $query->execute(array(':patologie'=>$patologie));
-$results = $query->fetchAll(PDO::FETCH_ASSOC);
+$results = $query->fetchAll(PDO::FETCH_ASSOC)
 
+while ($row = $results)
+{
+    echo
+     "<tr>
+        <td>{$row['des']}</td>
 
-$check = $hash_obj->CheckPassword($password, $stored_hash);
-if($check){
-    print_r("Registered user");
+      <tr>\n"
 }
-else{
-    print_r("Not a registered user");
-}
-
 
 //login here
 } 

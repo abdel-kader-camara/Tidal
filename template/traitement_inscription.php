@@ -10,6 +10,7 @@
     $prenom = $_POST["prenom"];
     $email = $_POST["email"];
     $mdp = $_POST["mdp"];
+    $hash_pwd = password_hash($mdp, PASSWORD_DEFAULT);
 
 
     try{
@@ -26,7 +27,7 @@
         $sth->bindParam(':nom',$nom);
         $sth->bindParam(':prenom',$prenom);
         $sth->bindParam(':email',$email);
-        $sth->bindParam(':mdp',$mdp);
+        $sth->bindParam(':mdp',$hash_pwd);
         $sth->execute();
 
         //On renvoie l'utilisateur vers la page de remerciement

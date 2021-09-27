@@ -25,6 +25,7 @@
    </head>
 
 <body>
+
    <p>
    <?php
       $filtre = "";
@@ -70,6 +71,8 @@
       } catch(PDOException $e) {
       echo 'ERROR: ' . $e->getMessage();
       } // end try
+
+      echo "filtre sur le mot $flitre";
    ?>
    </p>
 </body>

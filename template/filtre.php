@@ -42,7 +42,7 @@
          $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
          if(!empty($filtre)) {
-        $query = 'SELECT * FROM symptome WHERE desc = "'.$filtre.'"';
+        $query = 'SELECT * FROM symptome WHERE `desc` = "'.$filtre.'"';
          }
          else {
         $query = "SELECT * FROM symptome";

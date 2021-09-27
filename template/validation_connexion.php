@@ -26,8 +26,10 @@ try{
 $sql = "SELECT mdp FROM inscription WHERE nom=:nom";
 $query = $db->prepare($sql);
 $query->execute(array(':nom'=>$login));
-$results = $query->fetchAll();
+$results = $query->fetchAll(PDO::FETCH_ASSOC);
 print_r($results);
+echo $results['mdp'];
+echo $hash_pwd;
 if ($results['mdp'] == $hash_pwd )  echo "Password OK ! "; 
 else echo "password NOK ! ";
 

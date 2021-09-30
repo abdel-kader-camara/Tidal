@@ -5,8 +5,10 @@
       <select name="Group" id="Group">
                                 <option>Select a type:</option>   
     <?php
+    $con= new PDO('mysql:host=localhost;dbname=acu', "tidal", "tidal");
+    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
      $query = "SELECT patho.desc FROM patho";
-   }
+   
 
    //first pass just gets the column names
    

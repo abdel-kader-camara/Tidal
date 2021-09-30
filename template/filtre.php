@@ -41,7 +41,7 @@
         $query = 'SELECT S.desc AS symptome, P.desc AS pathologie FROM `keywords` AS KW JOIN keySympt AS KS on KW.idK = KS.idK JOIN symptome AS S on KS.idS = S.idS JOIN symptPatho AS SP on S.idS = SP.idS JOIN patho AS P on SP.idP = P.idP WHERE KW.name LIKE "%'.$filtre.'%" ';
          }
          else {
-        $query = "SELECT * FROM symptome";
+        $query = "SELECT `desc` FROM symptome, patho";
          }
 
          //first pass just gets the column names

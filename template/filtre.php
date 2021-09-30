@@ -5,18 +5,35 @@
       <select name="Group" id="Group">
                                 <option>Select a type:</option>   
     <?php
-    $con= new PDO('mysql:host=localhost;dbname=acu', "tidal", "tidal");
-    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-     $query = "SELECT patho.desc FROM patho";
+   $serveur = "localhost";
+   $dbname = "acu";
+   $user = "tidal";
+   $pass = "tidal";
+    
+
+   $query = "SELECT patho.desc FROM patho";
+
+   
+try{
+   $db = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
+   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+   catch(PDOException $e){
+       echo "Can't connect to the database";
+   }
+$sql = "SELECT patho.desc FROM patho";
+$query = $db->prepare($sql);
+$query->execute();
+$results = $query->fetch(PDO::FETCH_ASSOC);
    
 
    //first pass just gets the column names
    
-   $result = $con->query($query);
+   
 
    //return only the first row (we only need field names)
-   $row = $result->fetch(PDO::FETCH_ASSOC);
-    foreach($row as $m)
+   
+    foreach($results as $m)
     {
     ?>
         <option value="<?php echo $m['patho.desc'];?>"></option>

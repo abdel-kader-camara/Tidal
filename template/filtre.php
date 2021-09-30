@@ -38,7 +38,7 @@
          $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
          if(!empty($filtre)) {
-        $query = 'SELECT * FROM symptome WHERE `desc` LIKE "%'.$filtre.'%" ';
+        $query = 'SELECT S.desc AS symptome, P.desc AS pathologie FROM `keywords` AS KW JOIN keySympt AS KS on KW.idK = KS.idK JOIN symptome AS S on KS.idS = S.idS JOIN symptPatho AS SP on S.idS = SP.idS JOIN patho AS P on SP.idP = P.idP WHERE KW.name LIKE "%'.$filtre.'%" ';
          }
          else {
         $query = "SELECT * FROM symptome";

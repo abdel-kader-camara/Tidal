@@ -1,18 +1,17 @@
 <html>
    <form action="filtre.php" method="post">
         <select name="filtre" id="">
+         <option value="">All</option>
 
          <?php
+        
+        $keywords_sql=mysql_query("SELECT `name` FROM keywords");
 
+        while($keywords = mysql_fetch_array($keywords_sql)){
 
-            try {
-                  $con= new PDO('mysql:host=localhost;dbname=acu', "tidal", "tidal");
-                  $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+           echo '<option value="'.$keywords['name'].'"</option>'
 
-                  $query = 'SELECT `name` FROM keywords ';
-
-               }   
-   
+           }
 
          ?>
 

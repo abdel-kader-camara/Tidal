@@ -2,6 +2,27 @@
    <form action="filtre.php" method="post">
         <input type="text" name="filtre">
       <input name="search" type="submit" value="Search"/>
+      <select name="Group" id="Group">
+                                <option>Select a type:</option>   
+    <?php
+     $query = "SELECT patho.desc FROM patho";
+   }
+
+   //first pass just gets the column names
+   
+   $result = $con->query($query);
+
+   //return only the first row (we only need field names)
+   $row = $result->fetch(PDO::FETCH_ASSOC);
+    foreach($row as $m)
+    {
+    ?>
+        <option value="<?php echo $m['patho.desc'];?>"></option>
+    <?php
+    }
+?>
+</select>
+
    </form>
    <head>
       <meta charset = "UTF-8">

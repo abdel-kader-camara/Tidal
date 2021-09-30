@@ -1,22 +1,6 @@
 <html>
    <form action="filtre.php" method="post">
-        <select name="filtre" id="">
-         <option value="">All</option>
-
-         <?php
-        
-        $keywords_sql=mysql_query("SELECT `name` FROM keywords");
-
-        while($keywords = mysql_fetch_array($keywords_sql)){
-
-           echo '<option value="'.$keywords['name'].'"</option>'
-
-           }
-
-         ?>
-
-        </select>
-          
+        <input type="text" name="filtre">
       <input name="search" type="submit" value="Search"/>
    </form>
    <head>
@@ -87,6 +71,7 @@
       } catch(PDOException $e) {
       echo 'ERROR: ' . $e->getMessage();
       } // end try
+
 
    ?>
    </p>

@@ -1,6 +1,23 @@
 <html>
    <form action="filtre.php" method="post">
-        <input type="text" name="filtre">
+        <select name="filtre" id="">
+
+         <?php
+
+
+            try {
+                  $con= new PDO('mysql:host=localhost;dbname=acu', "tidal", "tidal");
+                  $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                  $query = 'SELECT `name` FROM keywords ';
+
+               }   
+   
+
+         ?>
+
+        </select>
+          
       <input name="search" type="submit" value="Search"/>
    </form>
    <head>
@@ -72,7 +89,6 @@
       echo 'ERROR: ' . $e->getMessage();
       } // end try
 
-      echo "filtre sur le mot $filtre";
    ?>
    </p>
 </body>

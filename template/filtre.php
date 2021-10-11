@@ -2,6 +2,46 @@
    <form action="filtre.php" method="post">
         <input type="text" name="filtre">
       <input name="search" type="submit" value="Search"/>
+      <select name="Group" id="Group">
+                                <option>Select a type:</option>   
+    <?php
+   $serveur = "localhost";
+   $dbname = "acu";
+   $user = "tidal";
+   $pass = "tidal";
+    
+
+   $query = "SELECT patho.desc FROM patho";
+
+   
+try{
+   $db = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
+   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+   catch(PDOException $e){
+       echo "Can't connect to the database";
+   }
+$sql = "SELECT patho.desc FROM patho";
+$query = $db->prepare($sql);
+$query->execute();
+$results = $query->fetch(PDO::FETCH_ASSOC);
+   
+
+   //first pass just gets the column names
+   
+   
+
+   //return only the first row (we only need field names)
+   
+    foreach($results as $m)
+    {
+    ?>
+        <option value="<?php echo $m['patho.desc'];?>"></option>
+    <?php
+    }
+?>
+</select>
+
    </form>
    <head>
       <meta charset = "UTF-8">
@@ -38,7 +78,7 @@
          $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
          if(!empty($filtre)) {
-        $query = 'SELECT * FROM symptome WHERE `desc` LIKE "%'.$filtre.'%" ';
+        $query = 'SELECT S.desc AS symptome, P.desc AS pathologie FROM `keywords` AS KW JOIN keySympt AS KS on KW.idK = KS.idK JOIN symptome AS S on KS.idS = S.idS JOIN symptPatho AS SP on S.idS = SP.idS JOIN patho AS P on SP.idP = P.idP WHERE KW.name LIKE "%'.$filtre.'%" ';
          }
          else {
         $query = "SELECT * FROM symptome";
@@ -72,7 +112,7 @@
       echo 'ERROR: ' . $e->getMessage();
       } // end try
 
-      echo "filtre sur le mot $filtre";
+
    ?>
    </p>
 </body>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-11 14:40:12
+/* Smarty version 3.1.39, created on 2021-10-11 16:53:13
   from '/var/www/html/projet/Tidal/Tidal/smarty/templates/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616430ace8dcf5_04505300',
+  'unifunc' => 'content_61644fd9eb6da4_83932714',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616430ace8dcf5_04505300 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61644fd9eb6da4_83932714 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="footer">
     <p>le footer</p>
   </div>

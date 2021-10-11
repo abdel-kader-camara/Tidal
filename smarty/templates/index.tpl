@@ -1,5 +1,5 @@
  
-{include file="header.tpl"}
+{include file="./header.tpl"}
 
 
 
@@ -17,4 +17,4 @@
   </div>
   <img class="image" src="images/a.jpg" alt="erreur">
 
-  {include file="footer.tpl"}
+  {include file="./footer.tpl"}

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-11 15:17:04
+/* Smarty version 3.1.39, created on 2021-10-11 16:53:13
   from '/var/www/html/projet/Tidal/Tidal/smarty/templates/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616439506df4d3_24009557',
+  'unifunc' => 'content_61644fd9e8eff6_59741833',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_616439506df4d3_24009557 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61644fd9e8eff6_59741833 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-11 15:14:34
+/* Smarty version 3.1.39, created on 2021-10-11 16:53:13
   from '/var/www/html/projet/Tidal/Tidal/smarty/templates/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616438ba91cf89_64593764',
+  'unifunc' => 'content_61644fd9ea8db0_65278454',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616438ba91cf89_64593764 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61644fd9ea8db0_65278454 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,19 +31,19 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="UTF-8">
     <title>Acupuncture</title>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1752902664616438ba91c507_47142481', 'css');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_149500914161644fd9ea79e1_10792847', 'css');
 ?>
 
 </head>
 <body>
 <?php }
 /* {block 'css'} */
-class Block_1752902664616438ba91c507_47142481 extends Smarty_Internal_Block
+class Block_149500914161644fd9ea79e1_10792847 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'css' => 
   array (
-    0 => 'Block_1752902664616438ba91c507_47142481',
+    0 => 'Block_149500914161644fd9ea79e1_10792847',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

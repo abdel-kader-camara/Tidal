@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-11 15:14:34
-  from '/var/www/html/projet/Tidal/Tidal/smarty/templates/header.tpl' */
+/* Smarty version 3.1.39, created on 2021-10-11 17:34:00
+  from '/var/www/html/projet/Tidal/Tidal/smarty/templates/header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616438ba91cf89_64593764',
+  'unifunc' => 'content_61645968784ba2_97686266',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'a563b0698137ac85d4d531cf5580337bc640bb6b' => 
+    '82d39d1488122dc701a03a2e34b6939c5459a980' => 
     array (
-      0 => '/var/www/html/projet/Tidal/Tidal/smarty/templates/header.tpl',
-      1 => 1633958068,
+      0 => '/var/www/html/projet/Tidal/Tidal/smarty/templates/header.html',
+      1 => 1633966147,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616438ba91cf89_64593764 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61645968784ba2_97686266 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,19 +31,19 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="UTF-8">
     <title>Acupuncture</title>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1752902664616438ba91c507_47142481', 'css');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_62183083361645968783cd5_04149887', 'css');
 ?>
 
 </head>
 <body>
 <?php }
 /* {block 'css'} */
-class Block_1752902664616438ba91c507_47142481 extends Smarty_Internal_Block
+class Block_62183083361645968783cd5_04149887 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'css' => 
   array (
-    0 => 'Block_1752902664616438ba91c507_47142481',
+    0 => 'Block_62183083361645968783cd5_04149887',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

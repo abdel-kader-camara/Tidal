@@ -11,7 +11,7 @@ try{
     catch(PDOException $e){
         echo "Can't connect to the database";
     }
-$sql = "SELECT * FROM symptomes";
+$sql = "SELECT * FROM symptome";
 $query = $db->prepare($sql);
 $query->execute();
 while ($results = $query->fetch(PDO::FETCH_ASSOC))

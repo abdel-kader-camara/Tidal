@@ -3,7 +3,7 @@
 if ($_POST){
 $form = $_POST;
 $symptome = $form['symptome'];
-$patologie = $form['patologie']
+$patologie = $form['patologie'];
 $meridien = $form['meridien'];
 $motcle = $form['motcle'];
 
@@ -15,11 +15,11 @@ try{
     catch(PODException $e){
         echo "Can't connect to the database";
     }
-$sql = "SELECT desc, nom, FROM patho, meridien WHERE  nom=:meridien"
+$sql = "SELECT desc, nom, FROM patho, meridien WHERE  nom=:meridien";
 //$sql = "SELECT * FROM users WHERE username=:username";
 $query = $db->prepare($sql);
 $query->execute(array(':patologie'=>$patologie));
-$results = $query->fetchAll(PDO::FETCH_ASSOC)
+$results = $query->fetchAll(PDO::FETCH_ASSOC);
 
 while ($row = $results)
 {

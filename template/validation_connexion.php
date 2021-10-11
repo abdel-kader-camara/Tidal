@@ -4,7 +4,6 @@ $dbname = "acu";
 $user = "tidal";
 $pass = "tidal";
 
-
 $nom = $_POST["nom"];
 $prenom = $_POST["prenom"];
 $email = $_POST["email"];

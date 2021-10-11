@@ -8,4 +8,7 @@ Pages  (5) :
 - Connexion(pop up)
 - Webographie / Page d'information
 
+
+Tout les chemins doivent être par rapport a index.php
+
 même donnée en WEB SERVICES

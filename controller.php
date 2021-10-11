@@ -13,7 +13,7 @@ $smarty->assign('styles', array('/var/www/html/projet/Tidal/Tidal/CSS/stylecss.c
 
 function patho() {
 $smarty = new Smarty();
-$smarty->display('index.tpl');
+$smarty->display('smarty/templates/index.tpl');
 }
 
 ?>

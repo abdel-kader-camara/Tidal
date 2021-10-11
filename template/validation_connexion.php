@@ -1,8 +1,5 @@
 <?php
-$serveur = "localhost";
-$dbname = "acu";
-$user = "tidal";
-$pass = "tidal";
+require_once('template_bdd.php');
 
 $nom = $_POST["nom"];
 $prenom = $_POST["prenom"];
@@ -15,13 +12,6 @@ $login = $form['login'];
 $password = $form['password'];
 $hash_pwd = password_hash($password, PASSWORD_DEFAULT);
 
-try{
-    $db = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-    catch(PDOException $e){
-        echo "Can't connect to the database";
-    }
 $sql = "SELECT mdp FROM inscription WHERE nom=:nom";
 $query = $db->prepare($sql);
 $query->execute(array(':nom'=>$login));

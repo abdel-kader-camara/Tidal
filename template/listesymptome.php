@@ -16,9 +16,9 @@ $query = $db->prepare($sql);
 $query->execute();
 while ($results = $query->fetch(PDO::FETCH_ASSOC))
 {
-    echo'<input type="select">';
+    // echo'<input type="select">';
     echo '<option value="' . $results['idS'] . '">' . $donnees['desc'] . '</option>';
-    echo '</input>';
+   // echo '</input>';
     echo $donnees['desc'];
 }   
 

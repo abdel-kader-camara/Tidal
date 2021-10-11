@@ -2,8 +2,7 @@
    <form action="filtre.php" method="post">
         <input type="text" name="filtre">
       <input name="search" type="submit" value="Search"/>
-      <select name="Group" id="Group">
-                                <option>Select a type:</option>   
+       
     <?php
    $serveur = "localhost";
    $dbname = "acu";

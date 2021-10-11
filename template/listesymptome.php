@@ -14,12 +14,15 @@ try{
 $sql = "SELECT * FROM symptome";
 $query = $db->prepare($sql);
 $query->execute();
+echo'<select>';
 while ($results = $query->fetch(PDO::FETCH_ASSOC))
 {
-    // echo'<input type="select">';
-    echo '<option value="' . $results['idS'] . '">' . $donnees['desc'] . '</option>';
-   // echo '</input>';
-    echo $donnees['desc'];
+    
+    echo '<option value="' . $results['idS'] . '">' . $results['desc'] . '</option>';
+    //echo '</input>';
+    //echo $results['desc'];
+    //echo '</select>';
 }   
 
+echo '</select>';
 ?>

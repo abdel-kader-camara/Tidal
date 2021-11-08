@@ -1,7 +1,7 @@
  
 {include file="./header.tpl"}
 
-if ({$smarty.session.login}) {
+if (isset ({$smarty.session.login})) {
   <p>tiamat</p>
 }
 

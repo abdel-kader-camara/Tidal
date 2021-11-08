@@ -5,7 +5,7 @@ include("template/template_bdd.php");
 require('/usr/local/lib/php/Smarty/Smarty.class.php');
 
 
-function patho() {
+function accueil() {
 $smarty = new Smarty();
 $smarty->display('smarty/templates/index.tpl');
 }

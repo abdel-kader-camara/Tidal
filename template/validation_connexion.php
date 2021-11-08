@@ -23,7 +23,6 @@ if (password_verify($password,$MDP_BASE))  {
     
     session_start();
     $_SESSION['login']= $_POST["login"]; 
-    $_SESSION['pwd']= $_POST["password"];
     header('Location: ../index.php?pages=accueil');
     
 }

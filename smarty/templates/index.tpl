@@ -1,7 +1,6 @@
  
 {include file="./header.tpl"}
-
-{if isset({$smarty.session.login})}
+{if isset($smarty.session.login)}
   Bienvenue {$smarty.session.login}
 
    <div class="header">

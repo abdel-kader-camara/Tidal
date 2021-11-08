@@ -24,7 +24,7 @@ if (password_verify($password,$MDP_BASE))  {
     session_start();
     $_SESSION['login']= $_POST["nom"]; 
     $_SESSION['pwd']= $_POST["mdp"];
-    header('Location: ../Tidal/index.php?pages=accueil');
+    header('Location: ../index.php?pages=accueil');
     
 }
 else echo "password NOK ! ";

@@ -10,4 +10,9 @@ $smarty = new Smarty();
 $smarty->display('smarty/templates/index.tpl');
 }
 
+function inscription() {
+    $smarty = new Smarty();
+    $smarty->display('smarty/templates/inscription.tpl');
+    }
+
 ?>

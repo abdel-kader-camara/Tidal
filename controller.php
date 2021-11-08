@@ -7,10 +7,8 @@ require('/usr/local/lib/php/Smarty/Smarty.class.php');
 
 function accueil() {
 $smarty = new Smarty();
-if (isset({$smarty.session.login})) {
-    echo {$smarty.session.login};
 $smarty->display('smarty/templates/index.tpl');
-}
+
 }
 
 function inscription() {

@@ -1,7 +1,9 @@
  
 {include file="./header.tpl"}
 
-
+if ({$smarty.session.login}) {
+  <p>tiamat</p>
+}
 
  <div class="header">
     <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=connexion';">Connexion</button>

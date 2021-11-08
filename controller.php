@@ -15,4 +15,9 @@ function inscription() {
     $smarty->display('smarty/templates/inscription.tpl');
     }
 
+function connexion() {
+    $smarty = new Smarty();
+    $smarty->display('smarty/templates/connexion.tpl');
+    }
+    
 ?>

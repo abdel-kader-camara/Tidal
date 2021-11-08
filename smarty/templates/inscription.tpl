@@ -3,7 +3,7 @@
  <center>
         <h2>Afin de finaliser votre inscription, veuillez completer le formulaire ci-dessous </h2>
         <fieldset>
-            <form action="../template/traitement_inscription.php" method="post">
+            <form action="../Tidal/template/traitement_inscription.php" method="post">
 
             <label for="nom">Nom</label>
             <input type="text" name="nom" required>

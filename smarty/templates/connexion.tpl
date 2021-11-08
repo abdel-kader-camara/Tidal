@@ -3,7 +3,7 @@
 <center>
     <h2>Connexion</h2>
         <fieldset>
-            <form action="../template/validation_connexion.php" method="post">
+            <form action="../Tidal/template/validation_connexion.php" method="post">
                 <label for="login">Login</label>
                 <input type="text" name="login" placeholder="entrez votre e-mail" required>
             

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-11-08 16:24:00
+/* Smarty version 3.1.39, created on 2021-11-08 16:27:31
   from '/var/www/html/projet/Tidal/Tidal/smarty/templates/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61894110e22782_76666792',
+  'unifunc' => 'content_618941e3308374_47744857',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0197cd10839899a77adc83e8cbd418f0f690a696' => 
     array (
       0 => '/var/www/html/projet/Tidal/Tidal/smarty/templates/index.tpl',
-      1 => 1636385036,
+      1 => 1636385248,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./footer.tpl' => 2,
   ),
 ),false)) {
-function content_61894110e22782_76666792 (Smarty_Internal_Template $_smarty_tpl) {
+function content_618941e3308374_47744857 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -35,8 +35,7 @@ if ((isset($_prefixVariable1))) {?>
 
 
    <div class="header">
-    <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=connexion';">Connexion</button>
-    <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=inscription';">Inscription</button>
+    <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=deconnexion';">Deconnexion</button>
     <div class="col-10 col-s-10 menu">
      
       <ul>

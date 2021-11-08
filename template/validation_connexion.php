@@ -16,19 +16,17 @@ $sql = "SELECT mdp FROM inscription WHERE nom=:nom";
 $query = $db->prepare($sql);
 $query->execute(array(':nom'=>$login));
 $results = $query->fetch(PDO::FETCH_ASSOC);
-var_dump($results);
 $MDP_BASE = $results["mdp"];
-echo "<br>";
-echo "Resultat de la requete SQL : ";
-echo $MDP_BASE;
-echo "<br>";
-echo "resultat du hash du password dans le FORM : ";
-echo $hash_pwd;
-echo "<br>";
-if (password_verify($password,$MDP_BASE))  echo "Password OK ! "; 
+
+if (password_verify($password,$MDP_BASE))  {
+    echo "Password OK ! "; 
+    session_start();
+    $_SESSION['login']= $_POST["nom"]; 
+    $_SESSION['pwd']= $_POST["mdp"];
+    
+}
 else echo "password NOK ! ";
 
 
-//login here
 } 
 ?>

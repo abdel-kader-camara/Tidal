@@ -22,8 +22,8 @@ if (password_verify($password,$MDP_BASE))  {
     //echo "Password OK ! "; 
     
     session_start();
-    $_SESSION['login']= $_POST["nom"]; 
-    $_SESSION['pwd']= $_POST["mdp"];
+    $_SESSION['login']= $_POST["login"]; 
+    $_SESSION['pwd']= $_POST["password"];
     header('Location: ../index.php?pages=accueil');
     
 }

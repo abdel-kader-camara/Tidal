@@ -5,8 +5,7 @@ session_start();
 
 
 if($pages == "accueil" ) {
-    echo "tata";
- 
+   
     accueil();
 }
 if($pages == "inscription" ) {

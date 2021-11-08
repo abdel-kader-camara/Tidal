@@ -10,13 +10,17 @@ require_once("controller.php");
 
 
 $pages = $_GET['pages'];
-if($pages == "patho" ) {
-    
+if($pages == "accueil" ) {
     patho();
 }
 if($pages == "inscription" ) {
     
     inscription();
+}
+
+if($pages == "connexion" ) {
+    
+    connexion();
 }
 
 ?>

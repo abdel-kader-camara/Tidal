@@ -19,10 +19,12 @@ $results = $query->fetch(PDO::FETCH_ASSOC);
 $MDP_BASE = $results["mdp"];
 
 if (password_verify($password,$MDP_BASE))  {
-    echo "Password OK ! "; 
+    //echo "Password OK ! "; 
+    
     session_start();
     $_SESSION['login']= $_POST["nom"]; 
     $_SESSION['pwd']= $_POST["mdp"];
+    header('Location: ../Tidal/index.php?pages=accueil');
     
 }
 else echo "password NOK ! ";

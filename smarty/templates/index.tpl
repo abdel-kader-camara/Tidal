@@ -4,8 +4,8 @@
 
 
  <div class="header">
-    <button class="button" onclick="window.location.href = '../../HTML/connexion.html';">Connexion</button>
-    <button class="button" onclick="window.location.href = '../../HTML/inscription.html';">Inscription</button>
+    <button class="button" onclick="window.location.href = '../HTML/connexion.html';">Connexion</button>
+    <button class="button" onclick="window.location.href = '../HTML/inscription.html';">Inscription</button>
     <div class="col-10 col-s-10 menu">
      
       <ul>

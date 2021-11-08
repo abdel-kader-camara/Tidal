@@ -2,7 +2,7 @@
 {include file="./header.tpl"}
 
 {if isset({$smarty.session.login})}
-  Bienvenue {$smarty.session.login}
+  <p>tiamat</p>
 {/if}
  <div class="header">
     <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=connexion';">Connexion</button>

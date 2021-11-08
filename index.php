@@ -16,7 +16,7 @@ if($pages == "inscription" ) {
 
 if($pages == "connexion" ) {
     
-    connexion();
+    connexion();    
 }
 
 ?>

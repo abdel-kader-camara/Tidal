@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-11-08 14:35:15
+/* Smarty version 3.1.39, created on 2021-11-08 16:05:05
   from '/var/www/html/projet/Tidal/Tidal/smarty/templates/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61892793473335_87958554',
+  'unifunc' => 'content_61893ca1ab4241_17895273',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0197cd10839899a77adc83e8cbd418f0f690a696' => 
     array (
       0 => '/var/www/html/projet/Tidal/Tidal/smarty/templates/index.tpl',
-      1 => 1636378456,
+      1 => 1636383900,
       2 => 'file',
     ),
   ),
@@ -22,12 +22,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./footer.tpl' => 1,
   ),
 ),false)) {
-function content_61892793473335_87958554 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61893ca1ab4241_17895273 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-
+<?php if ((isset($_SESSION['login']))) {?> 
+  tiamat
+<?php }
+echo print_r($_SESSION);?>
 
  <div class="header">
     <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=connexion';">Connexion</button>

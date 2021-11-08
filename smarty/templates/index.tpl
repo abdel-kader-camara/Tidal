@@ -1,10 +1,10 @@
  
 {include file="./header.tpl"}
 
-if ({$smarty.session.login}) {
-  <p>tiamat</p>
-}
-
+{if isset ($smarty.session.login)} 
+  tiamat
+{/if}
+{$smarty.session|@print_r}
  <div class="header">
     <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=connexion';">Connexion</button>
     <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=inscription';">Inscription</button>

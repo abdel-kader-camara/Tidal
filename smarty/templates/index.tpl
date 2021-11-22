@@ -10,8 +10,8 @@
      
       <ul>
         <li>Accueil</li>
-        <li><a href="../template/listesymptome.php"> Symptomes </a> </li> 
-        <li><a href="../template/filtre.php"> Filtre Pathologie </a> </li>
+        <li>Symptomes</li>
+        <li>Pathologie</li>
       </ul>
     </div>
   </div>

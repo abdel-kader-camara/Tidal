@@ -12,8 +12,6 @@ $field["Message"] = "Liste des symptomes : ";
 $field["Resulats"] = $results;
 echo json_encode($field,JSON_PRETTY_PRINT);
 
-
-
 }
 
 else { 

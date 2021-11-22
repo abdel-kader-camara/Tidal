@@ -13,10 +13,13 @@ body {
   font-size: 17px;
   display: flex;
   flex-direction: column;
-  background-image: url("/images/c.jpg");
+  background-image: url("/Tidal/images/e.jpg");
   color: rgb(29, 32, 32);
 
 }
+
+
+
 .button
  {
   text-decoration: none;
@@ -50,7 +53,7 @@ body {
 .header {
   color: #111010;
   padding: 15px;
-  background-image: url("/images/TestImageFond.png");
+  background-image: url("/Tidal/images/d.jpg");
 }
 .image {
   width: 100%;
@@ -97,7 +100,7 @@ h1 {
   margin-top: auto;
   padding: 15px;
   color: #ffffff;
-  background-image: url("/images/TestImageFond.png");
+  background-image: url("/Tidal/images/d.jpg");
 
 }
 

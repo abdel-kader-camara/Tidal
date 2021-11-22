@@ -1,7 +1,7 @@
  
 {include file="./header.tpl"}
 
-{if isset({$smarty.session.login})}
+{if isset($smarty.session.login)}
   Bienvenue {$smarty.session.login}
 
    <div class="header">
@@ -10,8 +10,8 @@
      
       <ul>
         <li>Accueil</li>
-        <li>Symptomes</li>
-        <li>Pathologie</li>
+        <li><a href="../template/listesymptome.php"> Symptomes </a> </li> 
+        <li><a href="../template/filtre.php"> Filtre Pathologie </a> </li>
       </ul>
     </div>
   </div>

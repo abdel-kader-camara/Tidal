@@ -1,7 +1,6 @@
 <?php
 require_once("controller.php");
 $pages = $_GET['pages'];
-session_start();
 
 
 if($pages == "accueil" ) {

@@ -7,8 +7,10 @@ $sql = 'SELECT S.desc AS symptome, P.desc AS pathologie FROM `keywords` AS KW JO
 $query = $db->prepare($sql);
 $query->execute(array(':filtre'=>$filtre));
 $results = $query->fetch(PDO::FETCH_ASSOC);
-echo json_encode($results,JSON_PRETTY_PRINT);
+foreach ($results as $field => $value){
+    echo json_encode($field,JSON_PRETTY_PRINT);
 
+}
 }
 
 else { 
@@ -16,7 +18,9 @@ $sql = "SELECT * FROM symptome";
 $query = $db->prepare($sql);
 $query->execute();
 $results = $query->fetch(PDO::FETCH_ASSOC);
-echo json_encode($results,JSON_PRETTY_PRINT);
+foreach ($results as $field => $value){
+    echo json_encode($field,JSON_PRETTY_PRINT);
+}
 }
 
 ?>

@@ -7,8 +7,10 @@ $sql = 'SELECT S.desc AS symptome, P.desc AS pathologie FROM `keywords` AS KW JO
 $query = $db->prepare($sql);
 $query->execute(array(':filtre'=>$filtre));
 $results = $query->fetchAll();
-
+$field["Message"] = "Liste des symptomes : ";
+$field["Resulats"] = $results;
 echo json_encode($field,JSON_PRETTY_PRINT);
+
 
 
 }
@@ -19,6 +21,8 @@ $query = $db->prepare($sql);
 $query->execute();
 $results = $query->fetchAll();
 
+$field["Message"] = "Liste des symptomes : ";
+$field["Resulats"] = $results;
 echo json_encode($field,JSON_PRETTY_PRINT);
 }
 

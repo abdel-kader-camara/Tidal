@@ -31,7 +31,7 @@
         $sth->execute();
 
         //On renvoie l'utilisateur vers la page de connexion
-        header("Location:/Tidal/HTML/connexion.html");
+        header("Location:/Tidal/smarty/connexion.tpl");
     }
     catch(PDOException $e){
         echo 'Impossible de traiter les données. Erreur : '.$e->getMessage();

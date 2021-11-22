@@ -18,6 +18,7 @@ if($pages == "connexion" ) {
 }
 
 if($pages == "deconnexion" ) {
+    session_unset();
     session_destroy();
     accueil();    
 }

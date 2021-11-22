@@ -35,3 +35,11 @@ Compte utilisateur :
 - Inscription via formulaire
 
 - Login et session et recherche une fois connecté
+
+Page API :
+
+- Qui est disponible sur la page d'accueil et également dans le dossier /template/
+
+- API qui recupére tous les pathologies et les symptomes en focntion des mots clés.
+
+- Pour tester le filtre il suffit de rajouter sur l'url : ?filtre="xxx" avec xxx le mot clé à mettre

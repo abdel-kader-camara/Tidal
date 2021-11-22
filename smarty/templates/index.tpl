@@ -6,6 +6,7 @@
 
    <div class="header">
     <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=deconnexion';">Deconnexion</button>
+    <button class="button" onclick="window.location.href = '../Tidal/template/api.php';">API</button>
     <div class="col-10 col-s-10 menu">
      
       <ul>
@@ -24,7 +25,7 @@
  <div class="header">
     <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=connexion';">Connexion</button>
     <button class="button" onclick="window.location.href = '../Tidal/index.php?pages=inscription';">Inscription</button>
-    <button class="button" onclick="window.location.href = '../template/api.php';">API</button>
+    <button class="button" onclick="window.location.href = '../Tidal/template/api.php';">API</button>
     <div class="col-10 col-s-10 menu">
      
       <ul>

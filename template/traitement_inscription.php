@@ -31,7 +31,7 @@
         $sth->execute();
 
         //On renvoie l'utilisateur vers la page de connexion
-        header("Location:/Tidal/index.php?pages=connexion");
+        header("Location:../index.php?pages=connexion");
     }
     catch(PDOException $e){
         echo 'Impossible de traiter les données. Erreur : '.$e->getMessage();

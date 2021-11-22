@@ -9,9 +9,9 @@
     <div class="col-10 col-s-10 menu">
      
       <ul>
-        <li>Accueil</li>
-        <li>Symptomes</li>
-        <li>Pathologie</li>
+        <li><a href="../Tidal/index.php?pages=accueil">Accueil</a></li>
+        <li><a href="../Tidal/template/listesymptome.php">Symptomes</a></li>
+        <li><a href="../Tidal/template/filtre.php">Pathologie</a></li>
       </ul>
     </div>
   </div>

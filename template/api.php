@@ -18,8 +18,8 @@ $sql = "SELECT * FROM symptome";
 $query = $db->prepare($sql);
 $query->execute();
 $results = $query->fetch(PDO::FETCH_ASSOC);
-foreach ($results as $field => $value){
-    echo json_encode($field,JSON_PRETTY_PRINT);
+for ($i = 1; $i <= 10; $i++) {
+    echo json_encode($results,JSON_PRETTY_PRINT);
 }
 }
 
